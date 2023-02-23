@@ -30,15 +30,19 @@ Phase 2:
 # TODO: Implement a Linked List Node class here
 class Node:
   # TODO: Set the `_value` `_next` node instance variables
-  def __init__(self, value):
-    pass
+  def __init__(self, _value):
+    self._value = _value
+    self._next = None
+
 
 
 # TODO: Implement a Singly Linked List class here
 class LinkedList:
   # TODO: Set the `_head` node, `_tail` node, and list `_length` instance variables
   def __init__(self):
-    pass
+    self._head = None
+    self._tail = None
+    self._length = 0
 
   # TODO: Implement the get_node method here
   def get_node(self, position):
@@ -89,14 +93,14 @@ class LinkedList:
 # Phase 1 Manual Testing:
 
 # 1. Test Node and LinkedList initialization
-node = Node('hello')
-print(node)                                     # <__main__.Node object at ...>
-print(node._value)                              # hello
+# node = Node('hello')
+# print(node)                                     # <__main__.Node object at ...>
+# print(node._value)                              # hello
 linked_list = LinkedList()
 print(linked_list)                              # <__main__.LinkedList object at ...>
 
-# # 2. Test getting a node by its position
-# print(linked_list.get_node(0))                # None
+# 2. Test getting a node by its position
+print(linked_list.get_node(0))                # None
 
 # # 3. Test adding a node to the list's tail
 # linked_list.add_to_tail('new tail node')
