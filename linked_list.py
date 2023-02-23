@@ -46,7 +46,8 @@ class LinkedList:
 
   # TODO: Implement the get_node method here
   def get_node(self, position):
-    pass
+    if self._head == None:
+      return None
 
   # TODO: Implement the add_to_tail method here
   def add_to_tail(self, value):
@@ -93,9 +94,9 @@ class LinkedList:
 # Phase 1 Manual Testing:
 
 # 1. Test Node and LinkedList initialization
-# node = Node('hello')
-# print(node)                                     # <__main__.Node object at ...>
-# print(node._value)                              # hello
+node = Node('hello')
+print(node)                                     # <__main__.Node object at ...>
+print(node._value)                              # hello
 linked_list = LinkedList()
 print(linked_list)                              # <__main__.LinkedList object at ...>
 
